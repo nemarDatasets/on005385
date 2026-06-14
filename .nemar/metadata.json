@@ -1,36 +1,115 @@
 {
   "version": "2.0",
-  "dataset_id": "on005385",
-  "source": "openneuro",
-  "source_id": "ds005385",
+  "pipeline_stage": "enriched",
   "title": "Resting-state EEG data before and after cognitive activity across the adult lifespan and a 5-year follow-up",
-  "authors": {
-    "Edmund Wascher": {},
-    "Daniel Schneider": {},
-    "Patrick D. Gajewski": {},
-    "Stephan Getzmann": {}
-  },
   "license": "CC0",
   "dataset_type": "raw",
+  "authors": {
+    "Edmund Wascher": {
+      "orcid": "0000-0003-3616-9767"
+    },
+    "Daniel Schneider": {},
+    "Patrick D. Gajewski": {
+      "orcid": "0000-0001-8240-1702"
+    },
+    "Stephan Getzmann": {
+      "orcid": "0000-0002-6382-0183"
+    }
+  },
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005385.v1.0.3",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.2196/32352",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005385",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005385",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1007/s00429-021-02399-1",
+      "identifier_type": "DOI",
+      "relation_type": "IsReferencedBy"
+    },
+    {
+      "identifier": "10.1007/s10548-023-00982-9",
+      "identifier_type": "DOI",
+      "relation_type": "IsReferencedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.9.0",
-  "recording_modality": [
-    "eeg"
-  ],
-  "datatypes": [
-    "eeg"
   ],
   "funding_references": [
     {
       "funder_name": "The Dortmund Vital Study is funded by the institute’s budget (no grant number). Thus, the study design, collection, management, analysis, interpretation of data, writing of the report, and the decision to submit the report for publication is not influenced or biased by any sponsor."
+    },
+    {
+      "funder_name": "Leibniz Research Centre for Working Environment and Human Factors (IfADo)",
+      "award_number": "Institute budget"
     }
   ],
-  "acknowledgements": "The study is endorsed by German Center for Mental Health (DZPG). Dataset created with the help of: bids-matlab (see References). We are grateful to the technical staff at IfADo for data collection and to all participants of the Dortmund Vital Study."
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "79.5 GB (3265 files)"
+  ],
+  "formats": [
+    ".edf",
+    ".json",
+    ".md",
+    ".tsv",
+    ".yml"
+  ],
+  "description": "This dataset comprises 64-channel resting-state EEG recordings from 608 healthy adults aged 20-70 years, collected as part of the Dortmund Vital Study. Recordings were acquired before and after a 2-hour cognitive task battery, with three-minute sessions in both eyes-open and eyes-closed conditions. A subsample of 208 participants underwent follow-up measurements approximately 5 years after baseline, enabling longitudinal investigation of age-related changes in spontaneous brain electrical activity across the adult lifespan.",
+  "methods_description": "Resting-state EEG was recorded using a 64-channel elastic cap (actiCap, Brain Products GmbH) positioned according to the 10-20 system with FCz as online reference. Signals were amplified using a BrainVision Brainamp DC amplifier, digitized at 1000 Hz sampling rate, and filtered online with a 250 Hz low-pass filter. Electrode impedances were maintained below 10 kOhm. Recordings consisted of three-minute sessions with eyes closed followed by eyes open, performed before and after a 2-hour cognitive task block comprising visual attention, vigilance, stimulus-response conflict, working memory updating, statistical learning, and auditory selective attention tasks.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "resting-state"
+    },
+    {
+      "term": "aging"
+    },
+    {
+      "term": "cognitive performance"
+    },
+    {
+      "term": "brain activity"
+    },
+    {
+      "term": "lifespan development"
+    },
+    {
+      "term": "longitudinal"
+    },
+    {
+      "term": "follow-up"
+    },
+    {
+      "term": "Dortmund Vital Study"
+    },
+    {
+      "term": "eyes-open"
+    },
+    {
+      "term": "eyes-closed"
+    },
+    {
+      "term": "cognitive tasks"
+    }
+  ],
+  "source_hash": "24a66b648ca2432cb821a178186b2fa1f6b5fb8192aa3db2efb6ae4f26e4153f"
 }
