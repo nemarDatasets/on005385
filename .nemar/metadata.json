@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Resting-state EEG data before and after cognitive activity across the adult lifespan and a 5-year follow-up",
+  "description": "This dataset comprises 64-channel resting-state EEG recordings from 608 healthy adults aged 20-70 years, collected as part of the Dortmund Vital Study. Recordings were obtained before and after a 2-hour cognitive task battery, with measurements at baseline (2016-2023) and approximately 5-year follow-up (starting 2021) for 208 participants. The study investigates spontaneous brain electrical activity across the adult lifespan to elucidate normal aging processes and differences in brain activity relevant to cognitive health.",
+  "methods_description": "Resting-state EEG was recorded using a 64-channel elastic cap (actiCap, Brain Products GmbH) arranged according to the 10-20 system with FCz as online reference. Recordings were acquired with a BrainVision Brainamp DC amplifier at 1000 Hz sampling rate with online 250 Hz low-pass filtering. Each session consisted of three-minute recordings with eyes closed followed by eyes open, both before and after a 2-hour cognitive task block. Impedances were maintained below 10 kOhm.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -16,12 +18,43 @@
       "orcid": "0000-0002-6382-0183"
     }
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds005385.v1.0.3",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "resting-state"
+    },
+    {
+      "term": "cognitive aging"
+    },
+    {
+      "term": "longitudinal study"
+    },
+    {
+      "term": "lifespan development"
+    },
+    {
+      "term": "brain activity"
+    },
+    {
+      "term": "follow-up"
+    },
+    {
+      "term": "longitudinal"
+    },
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "Aging",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000375"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.2196/32352",
       "identifier_type": "DOI",
@@ -46,6 +79,16 @@
       "identifier": "10.1007/s10548-023-00982-9",
       "identifier_type": "DOI",
       "relation_type": "IsReferencedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005385.v1.0.3",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005385.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -53,14 +96,18 @@
       "funder_name": "The Dortmund Vital Study is funded by the institute’s budget (no grant number). Thus, the study design, collection, management, analysis, interpretation of data, writing of the report, and the decision to submit the report for publication is not influenced or biased by any sponsor."
     },
     {
-      "funder_name": "Leibniz Research Centre for Working Environment and Human Factors (IfADo)",
-      "award_number": "Institute budget"
+      "funder_name": "German Center for Mental Health (DZPG)",
+      "award_title": "Dortmund Vital Study"
+    },
+    {
+      "funder_name": "Institute budget (IfADo)",
+      "award_title": "Dortmund Vital Study"
     }
   ],
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
     "79.5 GB (3265 files)"
   ],
@@ -71,45 +118,5 @@
     ".tsv",
     ".yml"
   ],
-  "description": "This dataset comprises 64-channel resting-state EEG recordings from 608 healthy adults aged 20-70 years, collected as part of the Dortmund Vital Study. Recordings were acquired before and after a 2-hour cognitive task battery, with three-minute sessions in both eyes-open and eyes-closed conditions. A subsample of 208 participants underwent follow-up measurements approximately 5 years after baseline, enabling longitudinal investigation of age-related changes in spontaneous brain electrical activity across the adult lifespan.",
-  "methods_description": "Resting-state EEG was recorded using a 64-channel elastic cap (actiCap, Brain Products GmbH) positioned according to the 10-20 system with FCz as online reference. Signals were amplified using a BrainVision Brainamp DC amplifier, digitized at 1000 Hz sampling rate, and filtered online with a 250 Hz low-pass filter. Electrode impedances were maintained below 10 kOhm. Recordings consisted of three-minute sessions with eyes closed followed by eyes open, performed before and after a 2-hour cognitive task block comprising visual attention, vigilance, stimulus-response conflict, working memory updating, statistical learning, and auditory selective attention tasks.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "resting-state"
-    },
-    {
-      "term": "aging"
-    },
-    {
-      "term": "cognitive performance"
-    },
-    {
-      "term": "brain activity"
-    },
-    {
-      "term": "lifespan development"
-    },
-    {
-      "term": "longitudinal"
-    },
-    {
-      "term": "follow-up"
-    },
-    {
-      "term": "Dortmund Vital Study"
-    },
-    {
-      "term": "eyes-open"
-    },
-    {
-      "term": "eyes-closed"
-    },
-    {
-      "term": "cognitive tasks"
-    }
-  ],
-  "source_hash": "24a66b648ca2432cb821a178186b2fa1f6b5fb8192aa3db2efb6ae4f26e4153f"
+  "source_hash": "2c73df6f1abfc1880c9ebd777595c09a7d3ec26a8c0463126571715de3fa470a"
 }
