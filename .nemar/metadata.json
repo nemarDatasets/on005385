@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Resting-state EEG data before and after cognitive activity across the adult lifespan and a 5-year follow-up",
-  "description": "This dataset comprises 64-channel resting-state EEG recordings from 608 healthy adults aged 20-70 years, collected as part of the Dortmund Vital Study. Recordings were obtained before and after a 2-hour cognitive task battery, with measurements at baseline (2016-2023) and approximately 5-year follow-up (starting 2021) for 208 participants. The study investigates spontaneous brain electrical activity across the adult lifespan to elucidate normal aging processes and differences in brain activity relevant to cognitive health.",
-  "methods_description": "Resting-state EEG was recorded using a 64-channel elastic cap (actiCap, Brain Products GmbH) arranged according to the 10-20 system with FCz as online reference. Recordings were acquired with a BrainVision Brainamp DC amplifier at 1000 Hz sampling rate with online 250 Hz low-pass filtering. Each session consisted of three-minute recordings with eyes closed followed by eyes open, both before and after a 2-hour cognitive task block. Impedances were maintained below 10 kOhm.",
+  "description": "This dataset contains 64-channel resting-state EEG from 608 healthy adults aged 20-70 years, recorded for three minutes each with eyes closed and eyes open. Recordings were made before and after a 2-hour block of demanding cognitive tasks. A subsample of 208 participants also completed a follow-up session about five years after baseline. The data come from the Dortmund Vital Study on healthy cognitive aging and are provided as raw, non-preprocessed EEG in BIDS format.",
+  "methods_description": "Resting-state EEG was recorded in a quiet laboratory with participants seated, using a 64-channel actiCap system (10-20 layout, FCz online reference) and a BrainVision BrainAmp DC amplifier. Sampling rate was 1000 Hz with a 250 Hz online low-pass filter, and impedances were kept below 10 kOhm. Eyes-closed recording always preceded eyes-open recording, and both were done before and after a 2-hour cognitive task block.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -26,32 +26,18 @@
       "term": "resting-state"
     },
     {
-      "term": "cognitive aging"
+      "term": "Aging",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000375"
     },
     {
       "term": "longitudinal study"
     },
     {
-      "term": "lifespan development"
+      "term": "cognitive fatigue"
     },
     {
-      "term": "brain activity"
-    },
-    {
-      "term": "follow-up"
-    },
-    {
-      "term": "longitudinal"
-    },
-    {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
-      "term": "Aging",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D000375"
+      "term": "Dortmund Vital Study"
     }
   ],
   "related_identifiers": [
@@ -62,11 +48,6 @@
     },
     {
       "identifier": "https://github.com/nemarDatasets/on005385",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005385",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
@@ -89,6 +70,11 @@
       "identifier": "10.18112/openneuro.ds005385.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005385",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -96,12 +82,7 @@
       "funder_name": "The Dortmund Vital Study is funded by the institute’s budget (no grant number). Thus, the study design, collection, management, analysis, interpretation of data, writing of the report, and the decision to submit the report for publication is not influenced or biased by any sponsor."
     },
     {
-      "funder_name": "German Center for Mental Health (DZPG)",
-      "award_title": "Dortmund Vital Study"
-    },
-    {
-      "funder_name": "Institute budget (IfADo)",
-      "award_title": "Dortmund Vital Study"
+      "funder_name": "Leibniz Research Centre for Working Environment and Human Factors (IfADo)"
     }
   ],
   "resource_type_specific": "EEG Dataset",
@@ -109,7 +90,7 @@
     "eeg"
   ],
   "sizes": [
-    "79.5 GB (3265 files)"
+    "74.06 GB (3265 files)"
   ],
   "formats": [
     ".edf",
